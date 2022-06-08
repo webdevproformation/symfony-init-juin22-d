@@ -1,0 +1,32 @@
+vous avez installer => binaire => logiciel en ligne de commande 
+
+logiciel dans lequel j'ai une fenêtre avec des boutons 
+Terminal / cmd / shell (synonyme)
+php -flag (drapeau) options 
+composer options flag 
+symfony  server:start 
+------------
+php => permet de pouvoir lancer n'importe quel script PHP n'importe dans votre ordinateur 
+permet de pouvoir lancer n'importe quelle projet PHP (symfony) dans n'importe quel dossier 
+XAMPP => c:\xampp\htdocs
+WAMP => c:\wamp64\www 
+MAMP => /Applications/MAMP/htdocs 
+-------------
+composer => outil en ligne de commande qui permet de télécharger des script php depuis un site internet => depôt  => https://packagist.org/
+https://packagist.org/packages/symfony/skeleton 
+télécharger ET installer symfony ou une autre librairie
+pour que composer fonctionne il faut au préalable avoir installé sur son système php 
+-------------
+symfony => outil en ligne de commande (symfony-cli ) client en ligne de commande
+qui va permettre de démarrer un serveur de développement où vous voulez sur votre ordinateur 
+symfony il va permettre de jouer le rôle de Apache 
+pour qu'il fonctionne il dépend de composer (certaines commandes) et aussi php 
+
+https://symfony.com/download
+// pause rdv 13h30 !!!!
+
+
+
+
+
+

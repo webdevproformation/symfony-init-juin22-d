@@ -1,0 +1,59 @@
+# fichier qui permet de stocker des informations
+# vous pouvez écrire des commentaires via le symbole # en début de ligne
+# il n'existe la commentaire monoligne 
+
+#clé: valeur 
+# l'espace entre : valeur est OBLIGATOIRE et au moins 1 espace
+
+prenom: Alain
+nom: DOE
+age: 22
+isAdmin: false 
+
+# php -S localhost:1234
+# http://localhost:1234/02-composer.php
+# tableau associatif 
+# avant : les espaces sont facultatifs
+# après : il faut obligatoirement 1 espace
+
+sujets:
+    - js, toto tata
+    - php
+    - html
+
+# ATTENTION à l'indentation !!!!!
+#  information qui contient une autre  tableau dans un tableau
+# il faut mettre 4 espaces pour chaque valeur 
+# tableau indexé dans un tableau associatif
+
+matieres:
+    ["jquery , toto", css, sass]
+# données stocker dans d'autre données => il FAUT des espaces 
+# autre manière de créer un tableau indexé dans un tableau associatif en yaml 
+
+## Docker 
+## 10h50 !!! bon café !!!
+
+# xdebug dans PHP 
+# wamp dans la version utilisée => php.ini qui contient xdebug 
+# associer php8.1 php.ini => xdebug qui est activer 
+
+livre:
+    sommaire: liste des chapitres
+    partie1: introduction
+    partie2: plus d'informations
+    conclusion: synthèse des points abordés
+
+
+unParagraphe: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam veritatis pariatur tempore sint mollitia eius, recusandae ducimus maxime dolores, provident iusto error minus, ex perspiciatis placeat illum modi nisi quas. Quis hic deserunt nesciunt. Et odio voluptatum sit! Quod minima atque et ipsa deleniti voluptates quos porro error accusamus dolorem voluptate, veritatis iste numquam blanditiis eum nulla. Eum porro, quasi alias magnam impedit facere tenetur. Similique a, asperiores id necessitatibus dolorem dolores odit, impedit laboriosam harum doloribus, rerum velit explicabo sint officiis itaque tempore cumque blanditiis culpa delectus magnam! Aliquid quas obcaecati assumenda soluta aliquam consequatur maxime rem repellendus!
+
+unAutreParagraphe: >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam veritatis pariatur tempore sint mollitia eius, recusandae ducimus maxime dolores, provident iusto error minus, ex perspiciatis placeat illum modi nisi quas. 
+        Quis hic deserunt nesciunt. Et odio voluptatum sit! Quod minima atque et ipsa deleniti voluptates quos porro error accusamus dolorem voluptate, veritatis iste numquam blanditiis eum nulla. 
+    Eum porro, quasi alias magnam impedit facere tenetur. Similique a, asperiores id necessitatibus dolorem dolores odit, impedit laboriosam harum doloribus, rerum velit explicabo sint officiis itaque tempore cumque blanditiis culpa delectus magnam! Aliquid quas obcaecati assumenda soluta aliquam consequatur maxime rem repellendus!
+
+dernierParagraphe: |
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam veritatis pariatur tempore sint mollitia eius, recusandae ducimus maxime dolores, provident iusto error minus, ex perspiciatis placeat illum modi nisi quas. Quis hic deserunt nesciunt. 
+        Et odio voluptatum sit! Quod minima atque et ipsa deleniti voluptates quos porro error accusamus dolorem voluptate, veritatis iste numquam blanditiis eum nulla. 
+    Eum porro, quasi alias magnam impedit facere tenetur. Similique a, asperiores id necessitatibus dolorem dolores odit, impedit laboriosam harum doloribus, rerum velit explicabo sint officiis itaque tempore cumque blanditiis culpa delectus magnam! Aliquid quas obcaecati assumenda soluta aliquam consequatur maxime rem repellendus!
+

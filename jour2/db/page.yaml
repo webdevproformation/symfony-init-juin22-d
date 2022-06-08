@@ -1,0 +1,21 @@
+# .yaml => très souvent Symfony
+# tableau 
+# installer une librairie symfony/yaml via composer
+
+titre: Page réalisée via une petite base YAML
+articles: 
+    -
+        titre: titre1
+        img: https://via.placeholder.com/400x300
+        text: |
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet est? Labore ea aut, ratione corporis sapiente debitis tempora a velit quod reiciendis recusandae voluptate animi incidunt quis. In, atque.
+    -
+        titre: titre2
+        img: https://via.placeholder.com/400x300
+        text: |
+            Article 2 consectetur adipisicing elit. Laborum, amet est? Labore ea aut, ratione corporis sapiente debitis tempora a velit quod reiciendis recusandae voluptate animi incidunt quis. In, atque.
+    -
+        titre: titre3
+        img: https://via.placeholder.com/400x300
+        text: |
+            Article 3 amet consectetur adipisicing elit. Laborum, amet est? Labore ea aut, ratione corporis sapiente debitis tempora a velit quod reiciendis recusandae voluptate animi incidunt quis. In, atque.        

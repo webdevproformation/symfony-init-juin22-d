@@ -1,0 +1,38 @@
+namespace => protéger votre code des redéclarations de fonction et class 
+
+namespace Toto\Tata\Titi ;
+
+class A{ }
+
+---------
+
+$a = new Toto\Tata\Titi\A(); // Fully Qualified Name 
+
+---------
+
+use Toto\Tata\Titi\A ;
+
+$a = new A()
+
+---------
+
+use Toto\Tata\Titi\A as ARenomme ;
+
+$a = new ARenomme() ;
+
+---------
+
+require 
+
+spl_autoload_register(function($className){
+    $className = str_replace("A\\" , "dossier/" , $className);
+    require $className . ".php";
+});
+
+use A\Etudiant ;
+
+$e = new Etudiant();
+
+équivalence entre namespace <====> un dossier qui contient des fichiers dont le nom est la class 
+
+

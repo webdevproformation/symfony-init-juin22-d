@@ -1,0 +1,22 @@
+Symfony => Framework 
+
+
+Frame+work => 
+Frame => cadre / charpente / organisation 
+Work => travail 
+
+Projet informatique qui vient avec beaucoup de code 
+MAIS aussi  règles / des bonnes pratiques et
+une manière de fonctionner 
+
+Très grosse librairie avec une manière de travailler 
+
+=> créateur => Fabien POTENCIER,
+
+le site officiel = >https://symfony.com/
+
+=> beaucoup de concurrent ! => https://laravel.com/
+qui se ressemble plus ou moins => MVC 
+
+Architecture MVC => Modèle Vue Controller 
+

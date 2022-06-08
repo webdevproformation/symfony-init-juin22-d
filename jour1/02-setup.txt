@@ -1,0 +1,42 @@
+Préparation de l'environnement pour Symfony
+
+=> Dans Visual Studio Code (extensions à installer faciliter la vie )
+
+3 extensions à installer : 
+
+PHP Intelephense  => Ben Mewburn
+PHP Namespace Resolver => Mehedi Hassan
+Twig Language 2 => mblode
+
+Paramètrage 
+roue dentée > Paramètres > 
+
+twig et php suggestion !!
+
+--------------------
+
+php via un logiciel (XAMPP / MAMP / WAMP)
+
+php en ligne de commande 
+
+Au lieu de mettre nos fichiers .php dans le dossier htdocs de votre serveur local 
+
+on va utiliser plutôt php en ligne de commande
+
+pour installer php en ligne de commande 
+
+en fonction de votre OS, l'installation de php en ligne de commande est différente :
+
+=> Windows 
+XAMPP Laura / Aaron / Gaelle / Tony
+
+
+WAMP => tous les autres étudiants 
+
+
+=> MacOS => Anaïs et Cédric / Yannick
+
+utilitaire en ligne de commande brew 
+php 8
+composer 
+symfony (avec un f)

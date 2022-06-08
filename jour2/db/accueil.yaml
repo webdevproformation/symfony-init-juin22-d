@@ -1,0 +1,37 @@
+menu:
+    titre: TP PHP
+    liens:
+        [Accueil , Connexion]
+body:
+    titre: Bienvenu
+    articles: 
+        - 
+            titre: Article 1
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?
+        - 
+            titre: Article 2
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?
+        - 
+            titre: Article 3
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?
+        - 
+            titre: Article 4
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?
+        - 
+            titre: Article 5
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?
+        - 
+            titre: Article 6
+            img: https://via.placeholder.com/300x200
+            synopsis: >
+                Article 6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, magnam?

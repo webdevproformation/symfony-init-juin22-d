@@ -1,0 +1,13 @@
+sur le bureau de votre ordinateur créer un nouveau dossier 
+symfony-initiation 
+
+créer un sous dossier jour1 
+
+---------------------
+
+support :
+
+https://formation.webdevpro.net/symfony/
+login : symfony
+password : version6
+
