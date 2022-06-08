@@ -1,0 +1,38 @@
+pour se créer un projet symfony 
+
+=> php en ligne de commande php -S localhost:1234 => server local 
+=> composer require ....... => télécharger des librairies depuis le site packagist.org 
+
+=> symfony outil en ligne de commande qui permet 
+- créer des projets symfony 
+- lancer une serveur de local de test ( php -S localhost:1234 )
+- mise en place du https en local (certificat de sécurité pour le https)
+- effectuer des tâches récurrentes => créer de fichiers / télécharger ... 
+
+- depuis la version 5 et 6 de symfony l'outil en ligne de commande symfony remplace 
+- emballer ces deux outils 
+
+cd .. # se positionner à la racine du projet 
+symfony new jour2-tp
+
+cd jour2-tp # il faut se déplacer dans le dossier jour2-tp
+
+symfony server:start
+
+https://127.0.0.1:8000
+http://127.0.0.1:8000
+
+
+<?php 
+
+namespace App\Controller ;
+use Symfony\Component\Routing\Annotation\Route;
+
+
+class HomeController{
+    #[Route("/")]
+    public function index(){
+        var_dump("ici");
+        die();
+    }
+}

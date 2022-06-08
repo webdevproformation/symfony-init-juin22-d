@@ -1,0 +1,65 @@
+
+# téléchargé et installé symfony via la commande 
+
+symfony new <nom-du-projet>
+symfony new jour2-tp 
+
+# positionner dans le dossier qui contient le projet symfony
+
+cd jour2-tp 
+
+# démarrer le serveur local 
+
+symfony server:start 
+php -S localhost:8000 -t public 
+
+# sur votre navigateur et lancer l'adresse suivante
+
+http://localhost:8000 => page d'accueil de symfony (lancement de projet )
+
+
+----------------------------
+
+dans symfony 
+bin/ => dossier qui contient un outil interne de symfony en ligne de commande 
+        commande qui permettre de réaliser des tâches de développement 
+
+        symfony console ......
+        php bin/console ......
+
+config/ => dossier qui contient des fichiers de configuration (comportement)
+          de composants de symfony 
+          contient des fichiers .yaml paramètre de configuration de fonctionnalité de notre projet 
+
+public/ => contient 1 seul fichier index.php 
+          l'ensemble des fichiers public de notre projet 
+          css / javascript / image
+          index.php front controller lien entre https://127.0.0.1:8000/ => tous les autres dossiers et leu contenu 
+
+src/ => DANS CE DOSSIER que l'on travailler 90% du temps 
+    dans ce dossier que l'on va créer dossier / fichiers .... 
+
+var/ ne pas toucher
+     dans ce dossier stocker des informations générées automatiquement par symfony
+     cache et log => exécuter rapidement symfony
+     cache => dev (actuellement)
+     cache => prod (lorsque le projet sera mis en ligne)
+    vider manuellement ou via une commande 
+
+vendor => créer lorsque l'on crée le projet symfony new ....
+      il contient l'ensemble des dépendances de notre projet symfony
+      dont YAML 
+    ne pas toucher 
+    modifier / supprimer / ajouter => en ligne de commande composer ..... 
+
+=> src 90% / config 9% / public 1% 
+
+.env (qui permet de déterminer si on est en développement / production)
+     (connexion projet symfony avec une base de données MySQL / SQlite / PostGRE)
+.gitignore (git)
+composer.json / .lock => dépendances de notre projet et description de notre projet (composer)
+symfony.lock (???)
+
+// fichier de configuration 
+
+
