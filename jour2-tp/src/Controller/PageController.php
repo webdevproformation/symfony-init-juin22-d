@@ -34,4 +34,52 @@ class PageController extends AbstractController {
     public function exo6() : Response{
         return $this->render("page/exo6.html.twig");
     }
+
+
+    #[Route("/page-avec-variables")]
+    public function pageAvecVariables() : Response{
+
+        // la variable qui est mise en 2ème paramètre de la méthode render 
+        // OBLIGATOIREMENT un tableau associatif
+        // requete en base de données PDO prepare fetchAll
+        // composer require twig => html + PHP 
+        $data = [
+            "titre" => "envoyer des variables",
+            "produit" => [
+                "nom" => "Produit 1",
+                "prix" => 30 ,
+                "disponible" => false ,
+                "caracteristiques" => [ "eco responsable" , "made in france" ]
+            ]
+        ];
+        // render est issue de class AbstractController 
+        return $this->render("page/page-avec-variables.html.twig" , $data);
+    }
+
+    #[Route("/exo7")]
+    public function exo7() :Response{
+        $data = [
+            "titre" => "Page réalisée via une base Yaml",
+            "articles" => [
+                [
+                    "titre" => "titre 1",
+                    "img" => "https://via.placeholder.com/500x250" ,
+                    "contenu" => "Lorem ipsum 4, dolor sit amet consectetur adipisicing elit. Dolores, rerum, quod neque officiis velit nemo nesciunt est facilis dignissimos doloremque explicabo totam sed quam culpa recusandae dolorum iure molestias commodi?"
+                ],
+                [
+                    "titre" => "titre 2",
+                    "img" => "https://via.placeholder.com/500x250" ,
+                    "contenu" => "Lorem ipsum 2, dolor sit amet consectetur adipisicing elit. Dolores, rerum, quod neque officiis velit nemo nesciunt est facilis dignissimos doloremque explicabo totam sed quam culpa recusandae dolorum iure molestias commodi?"
+                ],
+                [
+                    "titre" => "titre 3",
+                    "img" => "https://via.placeholder.com/500x250" ,
+                    "contenu" => "Lorem ipsum 3, dolor sit amet consectetur adipisicing elit. Dolores, rerum, quod neque officiis velit nemo nesciunt est facilis dignissimos doloremque explicabo totam sed quam culpa recusandae dolorum iure molestias commodi?"
+                ]
+            ]
+        ];
+        
+        return $this->render("page/exo7.html.twig",$data);
+    }
+
 }

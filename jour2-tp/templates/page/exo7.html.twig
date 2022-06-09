@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- https://localhost:8000/exo7 -->
+    <div class="container text-center">
+        <h1 class="my-4">{{ titre }}</h1>
+        <section class="row">
+        {% for article in articles %}
+            <article class="col-4">
+                <h2>{{ article.titre | upper  }}</h2>
+                <img src="{{article.img}}" alt="" class="img-fluid mb-3">
+                <p>{{ article.contenu }}</p>
+            </article>
+        {% endfor %}
+        <section>
+    </div>
+</body>
+</html>

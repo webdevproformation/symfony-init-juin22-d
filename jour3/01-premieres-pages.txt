@@ -81,7 +81,7 @@ créer une nouvelle page
 appelée via l'adresse https://127.0.0.1:8000/exo4
 
 créer un tableau associatif panier 
-contenir 5 valeurs => 5 tableaux
+contenir 5 valeurs 
     produit1 10
     produit2 12
     produit3 1
@@ -141,3 +141,13 @@ brand => Exo6
 dans le contenu de la page 
 un h1 avec utilisation des fichiers de template twig 
 p avec 50 mots de votre choix 
+
+
+---------------------
+
+créer une nouvelle page 
+dans le controller PageController
+
+appelée via l'adresse https://127.0.0.1:8000/exo7
+réaliser le design ci dessus 
+

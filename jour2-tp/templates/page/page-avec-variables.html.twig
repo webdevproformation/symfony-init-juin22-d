@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        {# sur du php qui contient du html #}
+        {# <h1><?php echo $data["titre"] ?></h1> #}
+        {# <h1><?= $data["titre"] ?></h1> #}
+
+        {#  je peux mettre mon commentaire #}
+        {#  afficher une variable qui a été envoyé à la vue #}
+        <h1>{{ titre }}</h1>
+
+        {# <p><?php echo $data["produit"]["nom"] ?></p> #}
+        <p>{{ produit.nom }}</p>
+    
+        {#<?php foreach($data["produit"]["caracteristiques"] as $caracteristique) : ?>
+            <div><?php echo $caracteristique ?></div>
+        <?php endforeach ?>#}
+
+        {% for caracteristique in produit.caracteristiques %}
+            <div>{{ caracteristique }}</div>
+        {% endfor %}
+
+        {# <p><?php ($data["produit"]["disponible"]) ? "le produit est disponible" : "rupture de stock" ?></p> #}
+
+        <p>{{ produit.disponible ? "le produit est disponible" : "rupture de stock"  }}</p>
+
+    </div>
+</body>
+</html>
