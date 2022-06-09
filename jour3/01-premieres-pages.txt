@@ -1,0 +1,143 @@
+créer nos premières pages avec Symfony 
+
+cd jour2-tp
+
+symfony server:start 
+php -S localhost:8000 -t public 
+
+https://127.0.0.1:8000
+http://127.0.0.1:8000
+
+-----------------------
+
+
+créer la page d'accueil de mon site => 
+
+pour Router /// Controller (qui va être une class )
+
+1 Router code lier une url avec une méthode dans un controller 
+
+config/routes/framework.yaml
+
+# route associer url ===> une fonction
+home: # nom de la route
+    path: / # l'url que l'on veut associer la page d'accueil => / ==== https://127.0.0.1:8000/
+    controller: App\Controller\HomeController::index # la méthode à associer 
+
+
+2 Controller class qui sera dans le dossier src/Controller/HomeController.php 
+
+cas pratique 
+
+créer une nouvelle page 
+adresse https://127.0.0.1:8000/exo1
+afficher le texte suivante : "je viens de créer ma première page sur Symfony"
+
+// manière classique (à l'ancienne ) .yaml + controller et une méthode 
+// version 6 
+
+
+La nouvelle manière de fonctionner => tout faire dans le fichier controller 
+
+symfony new ....
+
+installer une composant supplémentaire  (fonctionnalité supplémentaire) dans mon symfony
+
+deux terminaux => serveur de développement qui fonctionne en tâche de fond
+               => permettre de télécharger de nouvelles fonctionnalités dans mon projet 
+               cd => change directory 
+               cd jour2-tp 
+               composer require annotations 
+
+
+cas pratique :
+créer une nouvelle page 
+vous pouvez l'appeler via l'adresse https://127.0.0.1:8000/exo3
+utiliser le système d'annotation directement dans le controller
+
+afficher le texte suivante => date et heure de maintenant 
+09/06/2022 - 10h46 
+utiliser des fonctions de php qui permettent de générer ce texte 
+
+
+// site internet ensemble de pages 
+
+// un ou plusieurs url 
+// accueil => class + méthode
+// contact => autre class + méthode 
+// article => 
+// liste d'articles => 1 seule class pour avec deux méthodes
+// connexion => 1 class avec 1 method
+
+// route / controller (class) / method (fonction)
+
+// ??? 1 page == class 
+// ??? 1 page == méthod 
+
+// class qui va contenir plusieurs méthodes (donc plusieurs pages)
+
+
+créer une nouvelle page 
+appelée via l'adresse https://127.0.0.1:8000/exo4
+
+créer un tableau associatif panier 
+contenir 5 valeurs => 5 tableaux
+    produit1 10
+    produit2 12
+    produit3 1
+    produit4 4
+
+    afficher le dernier élément du tableau en utilisant une fonction de debuggage de symfony
+
+---------------------------
+
+pour @return void à chaque fois 
+
+=> oui si dump() dd() var_dump() die()
+=> c'est mieux pour la lisibilité de ton code ! 
+
+=> repondre du html 
+remplacer @return void par  @return Response 
+
+
+-----------------
+
+cas pratique 
+
+créer le nouvelle page 
+appelée via l'adresse https://127.0.0.1:8000/exo5
+
+cette méthode retourne une Response de HttpFoundation
+cette réponse contient 
+
+créer une variable => tableau 
+$user = [
+    "nom" => "Alain",
+    "adresse => [
+        "rue" => "75 rue de Paris",
+        "CP => 77000
+        ville Paris 
+    ]
+]
+
+conténation pour écrire le texte suivante (qui sera envoyé dans la Response)
+
+<p>Alain habite a <span class="adresse">75 rue de paris dans le 77</span></p>
+
+
+---------------------
+
+créer une nouvelle page 
+dans le controller PageController
+
+appelée via l'adresse https://127.0.0.1:8000/exo6
+
+appeler le fichier de vue page/exo6.html.twig 
+
+ce fichier twig utilise bootstrap 
+insérer dans cette page une barre de menu classique de bootstrap 
+brand => Exo6  
+
+dans le contenu de la page 
+un h1 avec utilisation des fichiers de template twig 
+p avec 50 mots de votre choix 

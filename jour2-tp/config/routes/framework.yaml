@@ -2,3 +2,19 @@ when@dev:
     _errors:
         resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
         prefix: /_error
+
+# router associer url ===> une fonction
+home: # nom de la route
+    path: / # l'url que l'on veut associer la page d'accueil => / ==== https://127.0.0.1:8000/
+    controller: App\Controller\HomeController::index # la méthode à associer 
+
+
+exo1: # attention de ne pas utiliser des noms de route déjà utilisé mettre un nom différent
+    path: /exo1
+    controller: App\Controller\HomeController::exo1 # 
+    #controller: App\Controller\Exo1Controller::method # solution1
+    #controller: App\Controller\Exo1Controller::index # solution2
+    #controller: App\Controller\exo1::index # possible mais non conseillé 
+
+    # la class qui est la controller Exo1Controller => convention permet de rendre le code lisible 
+    # 

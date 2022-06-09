@@ -1,0 +1,54 @@
+composer => un des outils installé le premier jour 
+
+télécharger et installer des lib PHP => packagist.org 
+
+composer require symfony/yaml 
+
+- composer.json + dossier vendor/ contient la lib
+
+---------------------
+
+yaml 
+fichier qui permet de stocker des données de manière structurée => base de données / tableau
+
+ATTENTION aux espaces 
+clé: valeur  => ["clé" => "valeur"];
+
+etudiant:
+    nom: Alain
+    age: 22
+    isAdmin: false  
+
+[
+    "etudiant" => [ "nom"=> "Alain" , "age"=> 22 , "isAdmin" => false ]
+];
+
+
+composer require symfony/yaml 
+
+use .....\Yaml
+.php => require "vendor/autoload.php"
+Yaml::parseFile()
+
+
+---------------
+
+créer un nouveau projet symfony 
+
+symfony new <projet=dossier>
+
+cd projet=dossier
+
+symfony server:start 
+
+lancer votre navigateur :  http://localhost:8000 (dans la barre d'adresse )
+
+---------------
+
+structure de symfony 
+
+=> src le dossier dans lequel nous allons le plus travailler 
+
+.env => fichier que l'on va toucher => base de données mySQL 
+
+=> var/ et vendor/ regarder ce qu'il s'y passe mais rarement modifier manuellement leur contenu 
