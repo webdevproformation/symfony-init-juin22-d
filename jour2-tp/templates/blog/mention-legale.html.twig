@@ -1,0 +1,12 @@
+{% extends "front.html.twig" %}
+
+{% block title %} {{ titre }} {{ parent() }} {% endblock %}
+
+{% block body%}
+<main class="container">
+    <h1>{{ titre }}</h1>
+    <div style="white-space:pre-line">
+        {{ contenu }}
+    </div>
+</main>
+{% endblock %}

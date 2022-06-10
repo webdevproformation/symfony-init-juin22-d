@@ -1,0 +1,18 @@
+{% extends "front.html.twig"  %}
+
+{% block title %} Présentation {{ parent() }} {% endblock %}
+
+{% block body %}
+<main class="container">
+    <img src="{{ img }}" alt="" class="img-fluid my-3 img-thumbnail">
+    <div style="white-space:pre-line">
+        {{ contenu }}
+    </div>
+    <h2>Compétences</h2>
+    <ul>
+        {% for key,valeur in competences %}
+            <li>{{ key }} : {{valeur}}</li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}

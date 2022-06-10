@@ -48,3 +48,33 @@ dans la vue il y aura deux parties
 
 cette vue doit hériter du fichier du vue front.html.twig
 
+--------------------
+
+mettre en place des liens hypertexte dans mes pages 
+
+cliquer sur lien au lien d'écrire les adresses dans la barre d'adresse 
+
+=> retourner dans les annotations dans le controller
+
+#[Route("/blog" , name:"blog_home")]
+
+=> twig => {{  path("blog_home") }}
+
+
+--------------------
+
+créer une nouvelle page
+
+accessible via l'adresse : https://localhost:8000/presentation 
+
+elle contient :
+
+image 
+3 paragraphes 
+liste de competences 
+    PHP => 20
+    Javascript 50 
+    HTML  100
+
+ajouter le lien hypertexte dans la barre de menu qui va afficher cette page  
+
