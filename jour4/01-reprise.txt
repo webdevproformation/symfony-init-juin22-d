@@ -78,3 +78,26 @@ liste de competences
 
 ajouter le lien hypertexte dans la barre de menu qui va afficher cette page  
 
+--------------------
+
+créer un fichier style.css 
+et pouvoir l'utiliser dans mes pages 
+
+fichier css / image / pdf / word ... => ressources public 
+créer un nouveau dossier dans le dossier public => css
+
+fonction asset() => lien vers fichiers dans le dossier public 
+
+télécharger la fonction 
+composer require asset
+
+-----------------------
+
+<link rel="stylesheet" href="{{ absolute_url(asset("css/style.css")) }}">
+
+cas pratique : 
+
+dans le dossier public créer un nouveau dossier img 
+dans ce dossier télécharger un logo de votre choix
+insérer ce logo dans la barre de menu juste avant le texte Blog
+

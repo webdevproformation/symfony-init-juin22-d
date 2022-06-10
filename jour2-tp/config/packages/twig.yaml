@@ -1,5 +1,9 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    globals:
+        auteur: moi
+        site_internet: http://exemple.com
+        site_name: blog
 
 when@test:
     twig:

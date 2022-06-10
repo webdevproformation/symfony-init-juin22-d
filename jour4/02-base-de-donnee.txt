@@ -1,0 +1,98 @@
+PHP 
+
+phpMyAdmin => créer la base 
+           => table
+           => INSERT INTO 
+
+class PDO 
+connexion 
+requete SQL récupérer les données dans une variable 
+afficher les données via une boucle 
+
+----------------------------
+
+Symfony 
+
+Doctrine => https://www.doctrine-project.org/
+librairie ORM : Object Relational Mapper 
+
+mettre en relation class <====> table de la base de données 
+             Entity 
+
+class Article{      <=================> nom de la table 
+
+    private $id ;
+
+    private $titre ;
+
+    private $contenu ; <==============> colonne de la table
+
+    setter et getter pour chaque propriété privée 
+    donner des valeurs => INSERT 
+    recupérer des valeurs => SELECT 
+
+}
+
+ArticleRepository ===============> SELECT 
+
+=> composer require orm
+=> souhaitez vous une config Docker (machine virtuelle pour la base de données => n)
+
+---------------------- 
+
+Some files have been created and/or updated to configure your new packages.
+  * Modify your DATABASE_URL config in .env
+
+  * Configure the driver (postgresql) and
+    server_version (13) in config/packages/doctrine.yaml
+
+doctrine sait communiquer avec 3 types de base de données 
+- sqlite => 
+- mysql
+- postgresql
+
+----------
+
+1er question avec Doctrine => quel type de base de données ???
+
+sqlite
+
+2 créer la base de données => en ligne de commande dans le dossier bin/console
+créer une base de données 
+
+php bin/console doctrine:database:create
+symfony console doctrine:database:create
+
+Created database C:\Users\harri\Desktop\symfony\jour2-tp/var/data.db for connection named default
+
+var/data.db base de donnée sqlite 
+
+extension de Visual Studio Code => installer SQlite alexcvzz 
+phpMyAdmin dans visual studio 
+
+composer require maker --dev
+
+Test.php
+
+------------------------
+
+Cas pratique créer une nouvelle Entité Exo 
+
+contient 4 propriétés privées
+
+id clé primaire / entier / autoincrément
+nom chaine de caractère de 200 lettres max 
+prenom chaine de caractère de 200 lettres max 
+dt_naissance datetime
+status boolean 
+
+créer le fichier Entity 
+créer le fichier de migration
+ajouter la table exo dans la base de donnée data.db 
+
+
+------------------------
+
+symfony console make:entity --regenerate
+
+symfony console make:entity

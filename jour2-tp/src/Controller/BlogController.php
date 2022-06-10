@@ -1,5 +1,7 @@
 <?php 
 namespace App\Controller ;
+
+use App\Repository\ArticlesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -10,19 +12,10 @@ class BlogController extends AbstractController{
      * @return Response
      */
     #[Route("/blog" , name:"blog_home")]
-    public function index() : Response {
+    public function index( ArticlesRepository $articles ) : Response {
+        // SELECT * FROM articles ;
         $data = [
-            "menu" => ["brand" => "Blog"],
-            "articles" => [
-                [
-                    "titre" => "Article 1",
-                    "img" => "https://via.placeholder.com/600x300",
-                    "contenu" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam necessitatibus qui, voluptatibus quis dolorum sint tenetur, possimus, iusto corrupti asperiores incidunt quo quasi! Dolorem aliquid alias vitae sunt facere!"
-                ],
-                ["titre" => "Article 2","img" => "https://via.placeholder.com/400x200"],
-                ["titre" => "Article 3","img" => "https://via.placeholder.com/400x200"],
-                [ "titre" => "Article 4","img" => "https://via.placeholder.com/400x200"]
-            ]
+            "articles" => $articles->findAll()
         ];
         return $this->render("blog/index.html.twig" , $data);
     }
@@ -51,7 +44,7 @@ class BlogController extends AbstractController{
     public function presentation() : Response{
 
         $data = [
-            "menu" => ["brand" => "blog"] ,
+           
             "img" => "https://source.unsplash.com/random/1400x300",
             "contenu" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt nesciunt corporis laborum, magni libero excepturi sunt ab cupiditate amet hic ipsum sint incidunt quas optio accusantium? Tenetur beatae aliquam corrupti quaerat perferendis asperiores quisquam minus blanditiis ut, fugiat vitae quos? Illo fugit, eligendi quibusdam dolore ducimus maiores culpa dignissimos.
             Eius inventore id odio corrupti adipisci totam impedit, fuga veritatis! Modi voluptate velit saepe sequi? Deserunt perspiciatis tenetur minus quas porro reiciendis assumenda, vero excepturi numquam, nihil modi ea eius dicta repudiandae labore obcaecati dolorum odio mollitia consectetur recusandae cum incidunt! Atque illo explicabo sapiente accusamus corporis, debitis provident fugiat.
