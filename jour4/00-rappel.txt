@@ -1,0 +1,36 @@
+Page avec Symfony 
+
+- au minimum 2 choses :
+
+Controller (class avec méthodes)
+Route relié uri et la méthode de la class 
+
+-------------
+
+créer des routes 
+
+Ancienne manière (1) et nouvelle manière (2)
+
+1 => via un fichier .yaml (dans le dossier config)
+2 => via un attribut #[Route("/route/")]
+
+-------------
+
+dans Symfony => twig => html et PHP 
+
+{{ variable }} => echo $variable
+{% if / for %}
+{# #} => commentaire 
+{{ article.titre  }}    echo  $article["titre"] 
+afficher le contenu d'une valeur dans un tableau 
+
+-------------
+
+dump() var_dump()
+dd()   var_dump() + die()
+
+-------------
+
+une méthode dans un controller DOIT retourner une Response 
+
+

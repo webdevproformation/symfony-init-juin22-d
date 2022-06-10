@@ -1,0 +1,50 @@
+créer un nouveau controller dans le projet jour2-tp BlogController
+
+dispose d'une première méthode index => l'on peut appeler via l'adresse 
+https://localhost:8000/blog 
+
+réaliser le design décrit dans le schéma ci dessus
+
+=> barre de menu 
+=> 1 article principal mis en avant
+=> 3 article 
+
+Astuce : 
+=> manière de le réaliser via le mot clé => loop.first
+
+// ------------------
+
+twig => https://twig.symfony.com/
+=> https://twig.symfony.com/doc/3.x/tags/extends.html héritage 
+fonction de twig qui permet de faire hérité un fichier .twig à un autre fichier .twig 
+
+se met au début du fichier .twig dans la vue qui va hérité
+{% extends "vue-parent.html.twig" %}
+
+dans la vue parent => définir des zones => block
+
+
+{% block body %}
+=> le contenu dédié dans l'enfant 
+{% endblock %}
+
+lien hypertexte entre les pages 
+
+assets => mon logo 
+
+-----------------------
+
+cas pratique
+
+dans le Controller Blog créer une nouvelle route
+https://localhost:8000/mention-legale
+qui va appeler une méthode  mention-legale dans ce controller 
+
+qui va afficher la vue blog/mention-legale.html.twig
+
+dans la vue il y aura deux parties
+- un titre => mention légale 
+- et 4 p de 30 mots chacun
+
+cette vue doit hériter du fichier du vue front.html.twig
+
